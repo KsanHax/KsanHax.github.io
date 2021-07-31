@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Forum(Test)</title>
+</head>
+<body>
+    <h1>Login Forum</h1>
+    <p>下記ボックスにユーザー名とPC名を入力してログインしてください。</p>
+    <p>(アクセステスト時に接続元のIPアドレスの入力が求められます。)</p>
+    <p>※これは自由研究のために作りました。大体の機能は動作しません</p>
+</body>
+<form action="#" method="post">
+	<p>ユーザー名(必須)<br>
+    <input type="text" name="uid" size="40" maxlength="32" autocomplete="OFF" />
+</form>
+<form action="#" method="post">
+	<p>接続先のIPアドレス(必須)<br>
+    <input type="text" name="address" size="30"></p>
+</form>
+<script type="text/javascript">
+    function gate() {
+       var UserInput = prompt("接続元のIPアドレスを入力してください:","");
+       location.href = UserInput + ".html";
+    }
+ </script>
+ <input type="button" value="アクセステスト" onclick="gate();">
+</html>
